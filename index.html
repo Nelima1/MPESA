@@ -3,64 +3,70 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>M-PESA UI Clone</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Payment Received</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <div class="status-bar">
-      <span>13:22</span>
-      <span class="status-icons">4G 2&#x1F4F6;</span>
-    </div>
-    <div class="header-bar">
-      <h1>M-PESA</h1>
-      <div class="balance">
-        <span>M-PESA Balance :</span> <strong>Ksh. 0.00</strong>
-        <button id="toggleBalance">Hide</button>
+<body class="bg-white text-black font-sans max-w-[430px] mx-auto">
+
+  <!-- Header -->
+  <div class="flex items-center justify-between px-4 pt-4 pb-2">
+    <div class="text-2xl font-light">&larr;</div>
+    <h1 class="text-lg font-medium">Payment received</h1>
+    <div class="w-6"></div> <!-- Placeholder for symmetry -->
+  </div>
+
+  <!-- Payment Info -->
+  <div class="px-4">
+    <div class="flex items-center space-x-3 mt-2">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_Bélo.svg/512px-Airbnb_Logo_Bélo.svg.png" alt="Airbnb Logo" class="w-6 h-6">
+      <div>
+        <p class="text-sm font-bold leading-4">AIRBNB PAYMENTS<br />UK LIMITED</p>
+        <p class="text-sm text-gray-600 mt-1">Feb 8, 05:51 pm</p>
       </div>
     </div>
-  </header>
+    <p class="text-green-600 font-semibold text-sm text-right mt-[-32px]">+US$18.92</p>
+  </div>
 
-  <main>
-    <section class="grid">
-      <div class="card">Send Money</div>
-      <div class="card">Withdraw Cash</div>
-      <div class="card">Buy Airtime</div>
-      <div class="card">Lipa na M-PESA</div>
-      <div class="card">Bill Manager</div>
-      <div class="card">Loans & Savings</div>
-      <div class="card">Fuliza M-PESA</div>
-      <div class="card">Global</div>
-      <div class="card">Account</div>
-    </section>
+  <hr class="my-4 border-t border-gray-200" />
 
-    <section class="statement-bar">
-      <span>M-PESA Statement</span>
-    </section>
+  <!-- Details Section -->
+  <div class="px-4 space-y-3">
+    <h2 class="text-sm font-medium text-gray-800">Details</h2>
+    <div class="flex justify-between text-sm">
+      <span>Amount</span>
+      <span>US$18.92</span>
+    </div>
+    <div class="flex justify-between text-sm font-medium">
+      <span>Total</span>
+      <span>US$18.92</span>
+    </div>
+  </div>
 
-    <section class="scan-bar">
-      <button class="scan-btn">Scan to pay</button>
-    </section>
+  <hr class="my-4 border-t border-gray-200" />
 
-    <section class="extras">
-      <div class="extra-card">M-PESA GO</div>
-      <div class="extra-card">
-        <span class="new-label">NEW</span>
-        Lipa Na M-PESA Portal<br>
-        <small>Apply for Till & Paybill solutions to collect & disburse funds</small>
-      </div>
-    </section>
-  </main>
+  <!-- Participants -->
+  <div class="px-4 space-y-3">
+    <p class="text-sm">You and AIRBNB PAYMENTS UK LIMITED</p>
+    <div class="flex items-center space-x-2">
+      <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5A2.25 2.25 0 0119.5 19.5H4.5a2.25 2.25 0 01-2.25-2.25V6.75M21.75 6.75A2.25 2.25 0 0019.5 4.5H4.5A2.25 2.25 0 002.25 6.75M21.75 6.75l-9.72 6.48a.75.75 0 01-.84 0L2.25 6.75" />
+      </svg>
+      <span class="text-sm text-blue-600">Email</span>
+    </div>
+  </div>
 
-  <footer>
-    <nav>
-      <div class="nav-icon">Home</div>
-      <div class="nav-icon active">M-PESA</div>
-      <div class="nav-icon">Discover</div>
-      <div class="nav-icon">Account</div>
-    </nav>
-  </footer>
+  <hr class="my-4 border-t border-gray-200" />
 
-  <script src="script.js"></script>
+  <!-- Transaction ID -->
+  <div class="px-4 space-y-2 pb-10">
+    <p class="text-sm font-medium text-gray-800">Transaction ID</p>
+    <div class="flex items-center justify-between">
+      <span class="text-sm">9CX87707DJ704612M</span>
+      <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 15.75H6A2.25 2.25 0 013.75 13.5v-9A2.25 2.25 0 016 2.25h9A2.25 2.25 0 0117.25 4.5v2.25M8.25 15.75h9A2.25 2.25 0 0019.5 13.5v-9M8.25 15.75V19.5A2.25 2.25 0 0010.5 21.75h9A2.25 2.25 0 0021.75 19.5v-9A2.25 2.25 0 0019.5 8.25H17.25" />
+      </svg>
+    </div>
+  </div>
+
 </body>
 </html>
